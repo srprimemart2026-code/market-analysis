@@ -17,7 +17,7 @@
                 <div class="brand-logo">SR</div>
                 <div>
                     <h2>S.R. PRIME MART</h2>
-                    <span class="badge">AI Growth Bot v2.0</span>
+                    <span class="badge">AI Growth Bot v2.1</span>
                 </div>
             </div>
 
@@ -33,7 +33,7 @@
                 <h4>S.R. PRIME MART</h4>
                 <a href="https://www.facebook.com/SRPRIMEMART" target="_blank" class="fb-link">facebook.com/SRPRIMEMART ↗</a>
                 <div class="status-indicator">
-                    <span class="dot"></span> Growth Engine Active
+                    <span class="dot"></span> Product Engine Active
                 </div>
             </div>
         </aside>
@@ -44,7 +44,7 @@
             <header class="top-header">
                 <div>
                     <h1 id="page-title">Viral Post & Reels Script Generator</h1>
-                    <p id="page-subtitle">ফেসবুক অ্যালগরিদম অনুযায়ী হাই-কনভার্টিং ক্যাপশন ও ভিডিও স্ক্রিপ্ট তৈরি করুন</p>
+                    <p id="page-subtitle">প্রোডাক্টের সাথে মিল রেখে ভিন্ন ভিন্ন ক্যাপশন, হুক ও ভিডিও স্ক্রিপ্ট তৈরি করুন</p>
                 </div>
                 <div class="header-actions">
                     <span id="current-date" class="date-badge"></span>
@@ -59,29 +59,29 @@
                         <div class="form-group">
                             <label>কনটেন্টের ধরন নির্বাচন করুন</label>
                             <select id="content-type">
-                                <option value="fb-post">Facebook Sales Post (আকর্ষণীয় ক্যাপশন + হ্যাশট্যাগ)</option>
-                                <option value="reels-script">Facebook Reels / TikTok Video Script (Hook + Body + CTA)</option>
+                                <option value="fb-post">Facebook Sales Post (প্রোডাক্ট ক্যাপশন + হ্যাশট্যাগ)</option>
+                                <option value="reels-script">Facebook Reels / Video Script (Hook + Showcase + CTA)</option>
                                 <option value="ad-copy">Facebook Boost / Ad Copy (হাই কনভার্সন)</option>
                                 <option value="engagement-post">Engagement & Poll Post (রিচ বাড়ানোর জন্য)</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label>প্রোডাক্টের নাম ও বিবরণ</label>
-                            <input type="text" id="product-name" placeholder="যেমন: প্রিমিয়াম স্মার্ট ওয়াচ / লেদার ওয়ালেট">
+                            <label>প্রোডাক্টের নাম ও মূল বৈশিষ্ট্য</label>
+                            <input type="text" id="product-name" placeholder="যেমন: ম্যাগনেটিক লেদার ওয়ালেট / ANC ইয়ারবাড / স্মার্ট ওয়াচ">
                         </div>
                         <div class="form-group">
                             <label>মূল্য ও অফার (যদি থাকে)</label>
-                            <input type="text" id="product-offer" placeholder="যেমন: মাত্র ৯৯০ টাকা, সাথে সারাদেশে ক্যাশ অন ডেলিভারি">
+                            <input type="text" id="product-offer" placeholder="যেমন: মাত্র ৯৫০ টাকা, সারাদেশে ক্যাশ অন ডেলিভারি">
                         </div>
                         <div class="form-group">
                             <label>টার্গেট কাস্টমার ও টোন</label>
                             <select id="content-tone">
-                                <option value="persuasive">আকর্ষণীয় ও বিশ্বাসযোগ্য (Sales Focused)</option>
-                                <option value="urgent">জরুরি অফার / স্টক সীমিত (FOMO)</option>
-                                <option value="friendly">বন্ধুত্বপূর্ণ ও তথ্যবহুল</option>
+                                <option value="persuasive">বিক্রয়মুখী ও বিশ্বাসযোগ্য (Sales Focused)</option>
+                                <option value="urgent">সীমিত স্টক / দ্রুত অফার (Urgent)</option>
+                                <option value="friendly">বন্ধুত্বপূর্ণ ও সহজবোধ্য (Friendly)</option>
                             </select>
                         </div>
-                        <button id="generate-script-btn" class="primary-btn">✨ Generate Script & Post</button>
+                        <button id="generate-script-btn" class="primary-btn">✨ Generate Fresh Script & Post</button>
                     </div>
 
                     <div class="card output-card">
@@ -89,7 +89,7 @@
                             <h3>AI Generated Output</h3>
                             <button id="copy-output-btn" class="secondary-btn">📋 Copy Text</button>
                         </div>
-                        <textarea id="script-output" readonly placeholder="এখানে আপনার ফেসবুক পোস্ট বা ভিডিও স্ক্রিপ্ট তৈরি হবে..."></textarea>
+                        <textarea id="script-output" readonly placeholder="এখানে আপনার প্রোডাক্ট অনুযায়ী ফেসবুক ক্যাপশন বা ভিডিও স্ক্রিপ্ট তৈরি হবে..."></textarea>
                     </div>
                 </div>
             </section>
@@ -141,9 +141,9 @@
                         <div class="checklist" id="daily-checklist">
                             <label class="check-item"><input type="checkbox" data-id="1"> সকাল ১১টা থেকে দুপুর ১টার মধ্যে ১টি প্রোডাক্ট পোস্ট পাবলিশ করা</label>
                             <label class="check-item"><input type="checkbox" data-id="2"> সন্ধ্যা ৭টা থেকে রাত ৯টার মধ্যে ১টি ১৫-৩০ সেকেন্ডের Reels আপলোড করা</label>
-                            <label class="check-item"><input type="checkbox" data-id="3"> কাস্টমারের কমেন্ট ও ইনবক্স মেসেজের রিপ্লাই ৫ মিনিটের মধ্যে দেওয়া</label>
-                            <label class="check-item"><input type="checkbox" data-id="4"> পেজের স্টোরিতে (Story) প্রোডাক্টের রিভিউ বা পোল (Poll) শেয়ার করা</label>
-                            <label class="check-item"><input type="checkbox" data-id="5"> রিলেভেন্ট ফেসবুক গ্রুপে পেজের পোস্ট শেয়ার করা (স্প্যামিং ছাড়া)</label>
+                            <label class="check-item"><input type="checkbox" data-id="3"> কাস্টমারের কমেন্ট ও ইনবক্স মেসেজের রিপ্লাই দ্রুত দেওয়া</label>
+                            <label class="check-item"><input type="checkbox" data-id="4"> পেজের স্টোরিতে প্রোডাক্টের রিভিউ বা পোল শেয়ার করা</label>
+                            <label class="check-item"><input type="checkbox" data-id="5"> প্রাসঙ্গিক ফেসবুক গ্রুপে পেজের পোস্ট শেয়ার করা</label>
                             <label class="check-item"><input type="checkbox" data-id="6"> গতদিনের পোস্টে যারা লাইক দিয়েছে তাদের পেজে Invite পাঠানো</label>
                         </div>
                         <div class="progress-wrapper">
@@ -160,11 +160,11 @@
                     <div class="card">
                         <h3>🔥 ফেসবুক পেজ টপ র‍্যাঙ্কিং সিক্রেটস</h3>
                         <ul class="strategy-list">
-                            <li><strong>3-Second Hook Rule:</strong> ভিডিও বা রিলসের প্রথম ৩ সেকেন্ডে কাস্টমারের সমস্যার কথা বা আকর্ষণীয় অফার বলুন, নাহলে মানুষ স্ক্রল করে চলে যাবে।</li>
-                            <li><strong>Comment Keyword Strategy:</strong> পোস্টে সরাসরি দাম না লিখে মাঝে মাঝে লিখুন <em>"দাম জানতে 'Price' লিখে কমেন্ট করুন"</em>। কমেন্ট বাড়লে ফেসবুক পোস্টটি ভাইরাল করে।</li>
-                            <li><strong>Consistent Posting Time:</strong> বাংলাদেশের অডিয়েন্স সবচেয়ে বেশি অ্যাক্টিভ থাকে দুপুর ১২টা-২টা এবং রাত ৮টা-১১টা পর্যন্ত। এই সময়ে পোস্ট করুন।</li>
-                            <li><strong>Reels Over Photos:</strong> সাধারণ ছবির তুলনায় ফেসবুক রিলস (Reels) ৩ গুণ বেশি নতুন মানুষের কাছে পৌঁছায়।</li>
-                            <li><strong>Fast Response Badge:</strong> ইনবক্সে দ্রুত রিপ্লাই দিলে পেজে "Very Responsive" ব্যাজ আসে, যা কাস্টমারের বিশ্বাস বাড়ায়।</li>
+                            <li><strong>3-Second Hook Rule:</strong> ভিডিও বা রিলসের প্রথম ৩ সেকেন্ডে প্রোডাক্টের মূল সুবিধা বা ব্যবহার তুলে ধরুন।</li>
+                            <li><strong>Comment Keyword Strategy:</strong> ক্যাপশনে নির্দিষ্ট কি-ওয়ার্ড কমেন্ট করার আহ্বান জানালে এনগেজমেন্ট ও রিচ বাড়ে।</li>
+                            <li><strong>Consistent Posting Time:</strong> বাংলাদেশের অডিয়েন্স সক্রিয় থাকার সময়ে নিয়মিত পোস্ট করলে রিচ স্থিতিশীল থাকে।</li>
+                            <li><strong>Reels & Short Video:</strong> নতুন অডিয়েন্সের কাছে পৌঁছাতে শর্ট ভিডিও বা Reels নিয়মিত রাখুন।</li>
+                            <li><strong>Fast Response & Trust:</strong> ইনবক্সে দ্রুত ও পরিষ্কার তথ্য দিলে অর্ডার কনভার্সন বাড়ে।</li>
                         </ul>
                     </div>
                 </div>
@@ -174,7 +174,7 @@
             <section id="api-settings" class="tab-section">
                 <div class="card max-w-600">
                     <h3>⚙️ Real-Time AI Engine Setup (Optional)</h3>
-                    <p class="helper-text">বটটি ডিফল্টভাবে বিল্ট-ইন স্মার্ট টেমপ্লেট ইঞ্জিনে চলে। তবে আপনি যদি আরও অ্যাডভান্সড লাইভ AI উত্তর চান, তাহলে আপনার ফ্রি Google Gemini API Key এখানে সেভ করতে পারেন (এটি শুধু আপনার ব্রাউজারে সেভ থাকবে):</p>
+                    <p class="helper-text">বটটি ডিফল্টভাবে Product-Aware Smart Engine-এ চলে। তবে আরও বৈচিত্র্যময় লাইভ AI ক্যাপশনের জন্য আপনার Google Gemini API Key এখানে সেভ করতে পারেন (এটি শুধু আপনার ব্রাউজারে সেভ থাকবে):</p>
                     <div class="form-group">
                         <label>Google Gemini API Key</label>
                         <input type="password" id="gemini-api-key" placeholder="AIzaSy...">
